@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            Persistance of Vision - Experiment
+        </title>
+    </head>
+    <body id="body">
+
+    </body>
+    <script>
+        red()
+        function red(){
+            document.getElementById('body').style.backgroundColor = 'red'
+            setTimeout(() => green(), 1)
+        }
+        green()
+        function green(){
+            document.getElementById('body').style.backgroundColor = 'green'
+            setTimeout(() => blue(), 1)
+        }
+        blue()
+        function blue(){
+            document.getElementById('body').style.backgroundColor = 'blue'
+            setTimeout(() => red(), 1)
+        }
+    </script>
+</html>
